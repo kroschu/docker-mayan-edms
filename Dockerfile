@@ -32,7 +32,7 @@ ENV MAYAN_VERSION v2.7.3
 RUN mkdir -p /usr/src/mayan && \
 	git clone https://gitlab.com/mayan-edms/mayan-edms.git /usr/src/mayan && \
 	(cd /usr/src/mayan && git checkout -q tags/$MAYAN_VERSION) && \
-	(cd /usr/src/mayan && pip install --no-cache-dir -r requirements.txt)
+	(cd /usr/src/mayan && pip install -r requirements.txt)
 
 # Create directories
 RUN mkdir -p /usr/src/mayan/mayan/media/document_cache
