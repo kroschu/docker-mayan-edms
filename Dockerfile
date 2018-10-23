@@ -1,4 +1,4 @@
-FROM resin/raspberry-pi-python
+FROM hypriot/rpi-python
 MAINTAINER Volodymyr Kovalenko "tukroschu@gmail.com"
 
 # Install base libraries
